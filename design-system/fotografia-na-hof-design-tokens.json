@@ -24,8 +24,8 @@
       "amarelo": "#FFE4A4",
       "vermelho": "#FFB1BD",
       "amarelado": "#FFCA9B",
-      "branco": "#FFFFFF",
-      "preto": "#000000"
+      "branco": "#F3F3F3",
+      "preto": "#101010"
     },
     "dark": {
       "bg": "#0A0A14",

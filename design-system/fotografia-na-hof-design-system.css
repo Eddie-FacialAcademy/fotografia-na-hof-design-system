@@ -22,8 +22,8 @@
   --brand-amarelo:#FFE4A4;     /* 7401 U 25% */
   --brand-vermelho:#FFB1BD;    /* red 0331 U */
   --brand-amarelado:#FFCA9B;   /* pantone 712 U */
-  --brand-branco:#FFFFFF;
-  --brand-preto:#000000;
+  --brand-branco:#F3F3F3;
+  --brand-preto:#101010;
 
   /* Superfícies (dark) */
   --bg:#0A0A14; --bg2:#121022; --card:#1A1732; --card2:#221E40;

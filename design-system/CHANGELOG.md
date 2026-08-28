@@ -14,6 +14,12 @@ versionamento segue [SemVer](https://semver.org/lang/pt-BR/):
 
 _Nada pendente no momento._
 
+## [1.0.2] — 2026-08-28
+### Corrigido
+- Cores de marca branco e preto alinhadas ao arquivo do logo: gelo `#F3F3F3`
+  e preto `#101010` no lugar dos absolutos `#FFFFFF`/`#000000` (a marca não
+  usa branco nem preto puros).
+
 ## [1.0.1] — 2026-08-28
 ### Alterado
 - Menu "Design systems" agora inclui HArmonyCa Performance e Expert em

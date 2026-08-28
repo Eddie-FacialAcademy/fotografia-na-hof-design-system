@@ -22,7 +22,7 @@ Pacote para aplicar a marca em **qualquer projeto/ferramenta** (web, React, Fram
 
 ## Notas técnicas
 
-- **Cores:** extraídas do **gradiente do logo** (violeta `#7A1AD6`, lavanda `#C286FF`, azul profundo `#204A8A`) mais o apoio herdado da família (amarelo claro `#FFE4A4`, vermelho claro `#FFB1BD`, amarelado `#FFCA9B`) e branco/preto de marca. Derivadas medidas em WCAG AA nos dois temas.
+- **Cores:** extraídas do **gradiente do logo** (violeta `#7A1AD6`, lavanda `#C286FF`, azul profundo `#204A8A`) mais o apoio herdado da família (amarelo claro `#FFE4A4`, vermelho claro `#FFB1BD`, amarelado `#FFCA9B`) e o gelo `#F3F3F3` e o preto `#101010` do arquivo do logo. Derivadas medidas em WCAG AA nos dois temas.
 - **Tipografia:** Silka (institucional), embutida em base64/woff2; Poppins como fallback (quando a Silka não estiver disponível), depois system-ui. **Headers em Medium (500)**; eyebrow 600; numeral 700; body 300.
 - **Ícones:** biblioteca **Phosphor**, peso **Thin** (stroke 1pt na grade 24), `currentColor`.
 - **Tema:** dark por padrão; light via `data-theme="light"`; sem atributo segue `prefers-color-scheme`. Toggle persiste em `fnh-theme`.

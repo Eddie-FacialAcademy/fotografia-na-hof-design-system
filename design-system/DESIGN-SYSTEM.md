@@ -54,7 +54,7 @@ Importe `fotografia-na-hof-design-tokens.json` e gere variáveis no seu formato 
 ## Fundamentos
 
 ### Cores institucionais (base — não inventar fora disto)
-`#7A1AD6` violeta · `#C286FF` lavanda · `#204A8A` azul profundo (os três do gradiente do logo) · `#FFE4A4` amarelo · `#FFB1BD` vermelho · `#FFCA9B` amarelado · `#FFFFFF` branco · `#000000` preto.
+`#7A1AD6` violeta · `#C286FF` lavanda · `#204A8A` azul profundo (os três do gradiente do logo) · `#FFE4A4` amarelo · `#FFB1BD` vermelho · `#FFCA9B` amarelado · `#F3F3F3` gelo · `#101010` preto (os dois do arquivo do logo).
 
 ### Tema
 - **Dark é o padrão.** Light ativa com `data-theme="light"` no `<html>`; sem atributo, segue `prefers-color-scheme`.
