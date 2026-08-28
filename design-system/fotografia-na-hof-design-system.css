@@ -40,7 +40,7 @@
   --peach:var(--brand-amarelado);
 
   /* Marca (cor do logo SVG via currentColor) */
-  --logo:#FFFFFF;
+  --logo:#F3F3F3;
 
   /* Feedback / semânticas (sempre acompanhe de ícone + texto, nunca só cor) */
   --success:#45C08A; --warning:#E8B53D; --danger:#FF7D93; --info:#C286FF;
@@ -87,7 +87,7 @@
     --gold:#FFE4A4; --gold-deep:#D6C08A; --gold-ink:#7A5A0E; --gold-line:rgba(122,90,14,.55);
     --rose:#FFB1BD; --rose-ink:#B04A5E; --rose-line:rgba(176,74,94,.50);
     --peach:#FFCA9B;
-    --logo:#7A1AD6;
+    --logo:#101010;
     --success:#147A45; --warning:#8A5A00; --danger:#BE2C45; --info:#5E4A8C;
     --success-bg:rgba(31,138,91,.10); --warning-bg:rgba(138,90,0,.10);
     --danger-bg:rgba(199,47,73,.10); --row-sel:rgba(122,26,214,.10); --info-bg:rgba(94,74,140,.10);
@@ -106,7 +106,7 @@
   --gold:#FFE4A4; --gold-deep:#D6C08A; --gold-ink:#7A5A0E; --gold-line:rgba(122,90,14,.55);
   --rose:#FFB1BD; --rose-ink:#B04A5E; --rose-line:rgba(176,74,94,.50);
   --peach:#FFCA9B;
-  --logo:#7A1AD6;
+  --logo:#101010;
   --success:#147A45; --warning:#8A5A00; --danger:#BE2C45; --info:#5E4A8C;
   --success-bg:rgba(31,138,91,.10); --warning-bg:rgba(138,90,0,.10);
   --danger-bg:rgba(199,47,73,.10); --row-sel:rgba(122,26,214,.10); --info-bg:rgba(94,74,140,.10);
