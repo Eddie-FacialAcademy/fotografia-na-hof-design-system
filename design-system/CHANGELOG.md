@@ -14,6 +14,16 @@ versionamento segue [SemVer](https://semver.org/lang/pt-BR/):
 
 _Nada pendente no momento._
 
+## [1.0.1] — 2026-08-28
+### Alterado
+- Menu "Design systems" agora inclui HArmonyCa Performance e Expert em
+  Lábios 2026.
+### Corrigido
+- Tabela de Color Styles: coluna Escuro de "text/Secundário" alinhada ao
+  token `--mut` real.
+- Galeria de gradientes retintada por completo na paleta da marca (sobras do
+  molde removidas; a aurora agora termina no azul `#2E5FA8`).
+
 ## [1.0.0] — 2026-08-28
 
 Primeira versão da Fotografia na HOF, derivada do molde Facial Academy.
