@@ -13,7 +13,7 @@
       "note": "A marca da Fotografia na HOF no digital: logo, assinatura e uso correto sobre fundo claro e escuro. Mantém leitura e contraste nos dois temas."
     },
     "cores": {
-      "note": "Paleta institucional e seus derivados em tokens de tema, claro e escuro. O componente consome token, nunca cor fixa."
+      "note": "Paleta revelada do logo: a luz do diafragma em tokens de tema, claro e escuro. O componente consome token, nunca cor fixa."
     },
     "gradientes": {
       "note": "Gradientes da marca em malhas (mesh) e lineares. Sem cônico, sem blob, sem halo."
