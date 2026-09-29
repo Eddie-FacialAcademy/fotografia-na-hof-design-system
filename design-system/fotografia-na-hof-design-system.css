@@ -1,5 +1,5 @@
 /* ============================================================================
-   FOTOGRAFIA NA HOF · DESIGN SYSTEM — v1.0.3
+   FOTOGRAFIA NA HOF · DESIGN SYSTEM — v1.1.0
    Desenvolvido por Edegar Junior.
    Identidade própria da marca.
    ----------------------------------------------------------------------------
@@ -16,13 +16,13 @@
 /* ===== TOKENS · tema dark (padrão) ======================================== */
 :root{
   /* Cores institucionais — a fonte da verdade. Nada deve sair desta paleta. */
-  --brand-roxo:#7A1AD6;        /* violeta · do gradiente do logo · predominante */
-  --brand-lilas:#C286FF;       /* lavanda · do gradiente do logo */
+  --brand-violeta:#7A1AD6;        /* violeta · do gradiente do logo · predominante */
+  --brand-lavanda:#C286FF;       /* lavanda · do gradiente do logo */
   --brand-azul:#204A8A;       /* azul profundo · do gradiente do logo */
-  --brand-amarelo:#FFE4A4;     /* 7401 U 25% */
-  --brand-vermelho:#FFB1BD;    /* red 0331 U */
-  --brand-amarelado:#FFCA9B;   /* pantone 712 U */
-  --brand-branco:#F3F3F3;
+  --brand-dourado:#FFE4A4;     /* 7401 U 25% */
+  --brand-rosa:#FFB1BD;    /* red 0331 U */
+  --brand-pessego:#FFCA9B;   /* pantone 712 U */
+  --brand-gelo:#F3F3F3;
   --brand-preto:#101010;
 
   /* Superfícies (dark) */
@@ -30,14 +30,14 @@
   --line:rgba(194,134,255,.14);
 
   /* Roxo / lilás / texto */
-  --roxo:#341060; --roxo2:var(--brand-roxo); --roxo-bright:#8B33E3;
-  --lilas:var(--brand-lilas); --lilas-soft:#D4B3FF; --azul:#204A8A; --azul-luz:#7FA9EA;
+  --primary-deep:#341060; --primary:var(--brand-violeta); --primary-bright:#8B33E3;
+  --accent:var(--brand-lavanda); --accent-soft:#D4B3FF; --secondary:#204A8A; --secondary-bright:#7FA9EA;
   --txt:#F8F8FD; --mut:#C4BFD9; --legal-mut:#8880B5;
 
   /* Accent quente (-ink = variante de texto; -line = variante de borda) */
-  --gold:var(--brand-amarelo); --gold-deep:#D6C08A; --gold-ink:#FFE4A4; --gold-line:rgba(255,228,164,.42);
-  --rose:var(--brand-vermelho); --rose-ink:#FFB1BD; --rose-line:rgba(255,177,189,.42);
-  --peach:var(--brand-amarelado);
+  --highlight:var(--brand-dourado); --highlight-deep:#D6C08A; --highlight-ink:#FFE4A4; --highlight-line:rgba(255,228,164,.42);
+  --support:var(--brand-rosa); --support-ink:#FFB1BD; --support-line:rgba(255,177,189,.42);
+  --glow:var(--brand-pessego);
 
   /* Marca (cor do logo SVG via currentColor) */
   --logo:#F3F3F3;
@@ -74,19 +74,29 @@
 
   --font-sans:'Silka','Poppins',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
   color-scheme:dark;
- --cta-grad:linear-gradient(120deg,#8C35E3,#3267B6); --cta-solid:#8C35E3; --cta-solid-h:#3267B6; --cta-ink:#fff;}
+ --cta-grad:linear-gradient(120deg,#8C35E3,#3267B6); --cta-solid:#8C35E3; --cta-solid-h:#3267B6; --cta-ink:#fff;
+
+  /* Nomes legados (descontinuados na 1.1.0, saem na 2.0): apontam para os nomes novos.
+     Use os nomes novos em código novo. */
+  --roxo-bright:var(--primary-bright); --lilas-soft:var(--accent-soft); --gold-deep:var(--highlight-deep); --gold-line:var(--highlight-line);
+  --rose-line:var(--support-line); --gold-ink:var(--highlight-ink); --rose-ink:var(--support-ink); --azul-luz:var(--secondary-bright);
+  --roxo2:var(--primary); --lilas:var(--accent); --peach:var(--glow); --roxo:var(--primary-deep);
+  --gold:var(--highlight); --rose:var(--support); --azul:var(--secondary); --brand-amarelo:var(--brand-dourado);
+  --brand-vermelho:var(--brand-rosa); --brand-amarelado:var(--brand-pessego); --brand-roxo:var(--brand-violeta); --brand-lilas:var(--brand-lavanda);
+  --brand-branco:var(--brand-gelo);
+}
 
 /* Valores do tema light, reutilizados pelos dois seletores abaixo */
 @media (prefers-color-scheme: light){
   :root:not([data-theme="dark"]){
     --bg:#FAFAFA; --bg2:#F4F2FC; --card:#F9F8FE; --card2:#EEECFA;
     --line:rgba(122,26,214,.16);
-    --roxo:#341060; --roxo2:#7A1AD6; --roxo-bright:#8B33E3;
-    --lilas:#7A1AD6; --lilas-soft:#6929B8; --azul:#204A8A; --azul-luz:#2E5FA8; --focus-ring:#7A1AD6;
+    --primary-deep:#341060; --primary:#7A1AD6; --primary-bright:#8B33E3;
+    --accent:#7A1AD6; --accent-soft:#6929B8; --secondary:#204A8A; --secondary-bright:#2E5FA8; --focus-ring:#7A1AD6;
     --txt:#1A1533; --mut:#5F5A82; --legal-mut:#5F5A82;
-    --gold:#FFE4A4; --gold-deep:#D6C08A; --gold-ink:#7A5A0E; --gold-line:rgba(122,90,14,.55);
-    --rose:#FFB1BD; --rose-ink:#B04A5E; --rose-line:rgba(176,74,94,.50);
-    --peach:#FFCA9B;
+    --highlight:#FFE4A4; --highlight-deep:#D6C08A; --highlight-ink:#7A5A0E; --highlight-line:rgba(122,90,14,.55);
+    --support:#FFB1BD; --support-ink:#B04A5E; --support-line:rgba(176,74,94,.50);
+    --glow:#FFCA9B;
     --logo:#101010;
     --success:#147A45; --warning:#8A5A00; --danger:#BE2C45; --info:#5E4A8C;
     --success-bg:rgba(31,138,91,.10); --warning-bg:rgba(138,90,0,.10);
@@ -100,12 +110,12 @@
 [data-theme="light"]{
   --bg:#FAFAFA; --focus-ring:#7A1AD6; --bg2:#F4F2FC; --card:#F9F8FE; --card2:#EEECFA;
   --line:rgba(122,26,214,.16);
-  --roxo:#341060; --roxo2:#7A1AD6; --roxo-bright:#8B33E3;
-  --lilas:#7A1AD6; --lilas-soft:#6929B8; --azul:#204A8A; --azul-luz:#2E5FA8;
+  --primary-deep:#341060; --primary:#7A1AD6; --primary-bright:#8B33E3;
+  --accent:#7A1AD6; --accent-soft:#6929B8; --secondary:#204A8A; --secondary-bright:#2E5FA8;
   --txt:#1A1533; --mut:#5F5A82; --legal-mut:#5F5A82;
-  --gold:#FFE4A4; --gold-deep:#D6C08A; --gold-ink:#7A5A0E; --gold-line:rgba(122,90,14,.55);
-  --rose:#FFB1BD; --rose-ink:#B04A5E; --rose-line:rgba(176,74,94,.50);
-  --peach:#FFCA9B;
+  --highlight:#FFE4A4; --highlight-deep:#D6C08A; --highlight-ink:#7A5A0E; --highlight-line:rgba(122,90,14,.55);
+  --support:#FFB1BD; --support-ink:#B04A5E; --support-line:rgba(176,74,94,.50);
+  --glow:#FFCA9B;
   --logo:#101010;
   --success:#147A45; --warning:#8A5A00; --danger:#BE2C45; --info:#5E4A8C;
   --success-bg:rgba(31,138,91,.10); --warning-bg:rgba(138,90,0,.10);
@@ -121,11 +131,11 @@
 html{scroll-behavior:smooth}
 body{font-family:var(--font-sans);background:var(--bg);color:var(--txt);line-height:1.5;-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums}
 img,svg,video{display:block;max-width:100%}
-a{color:var(--lilas);text-decoration:none}
+a{color:var(--accent);text-decoration:none}
 
 /* Acessibilidade: foco visível (WCAG 2.4.7 / 1.4.11) + movimento reduzido */
 a:focus-visible,button:focus-visible,.fnh-btn:focus-visible,[tabindex]:focus-visible{
-  outline:2px solid var(--lilas);outline-offset:2px;box-shadow:var(--focus);border-radius:6px}
+  outline:2px solid var(--accent);outline-offset:2px;box-shadow:var(--focus);border-radius:6px}
 @media (forced-colors: active){
   a:focus-visible,button:focus-visible,.fnh-btn:focus-visible{outline:2px solid Highlight!important;outline-offset:2px}
 }
@@ -136,7 +146,7 @@ a:focus-visible,button:focus-visible,.fnh-btn:focus-visible,[tabindex]:focus-vis
 
 /* ===== TIPOGRAFIA · escala fluida (Desktop ⇄ Phone) ======================= */
 /* Breakpoints Framer de referência: Desktop ≥1200 · Tablet ≤810 · Phone ≤390 */
-.fnh-eyebrow{font-size:clamp(11px,1.4vw,12px);letter-spacing:.18em;text-transform:uppercase;color:var(--lilas);font-weight:600}
+.fnh-eyebrow{font-size:clamp(11px,1.4vw,12px);letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:600}
 .fnh-h1{font-size:clamp(34px,6vw,60px);font-weight:500;letter-spacing:-.025em;line-height:1.03}
 .fnh-h2{font-size:clamp(26px,4vw,38px);font-weight:500;letter-spacing:-.02em;line-height:1.12}
 .fnh-h3{font-size:clamp(20px,2.4vw,24px);font-weight:500;line-height:1.2}
@@ -148,7 +158,7 @@ a:focus-visible,button:focus-visible,.fnh-btn:focus-visible,[tabindex]:focus-vis
 .fnh-small{font-size:14px;font-weight:300;color:var(--mut);line-height:1.6}
 .fnh-legal{font-size:clamp(11px,1.2vw,12px);font-weight:300;color:var(--legal-mut);line-height:1.5}
 .fnh-num{font-size:clamp(32px,4.6vw,44px);font-weight:700;line-height:1;font-variant-numeric:tabular-nums;font-feature-settings:"tnum" 1}
-.fnh-hl{color:var(--lilas)}
+.fnh-hl{color:var(--accent)}
 
 /* ===== BOTÕES =============================================================
    Estrutura: class="fnh-btn <variante> <tamanho>"
@@ -165,13 +175,13 @@ a:focus-visible,button:focus-visible,.fnh-btn:focus-visible,[tabindex]:focus-vis
 .fnh-btn.fnh-solid{background:var(--cta-solid);color:var(--cta-ink)}
 .fnh-btn.fnh-solid:hover{background:var(--cta-solid-h)}
 .fnh-btn.fnh-outline{background:transparent;color:var(--txt);border:1px solid var(--line)}
-.fnh-btn.fnh-outline:hover{border-color:var(--lilas);color:var(--lilas)}
-.fnh-btn.fnh-ghost{background:transparent;color:var(--lilas);padding:10px 14px;border-radius:var(--radius-sm)}
-.fnh-btn.fnh-ghost:hover{color:var(--lilas-soft);text-decoration:underline;text-underline-offset:3px}
-.fnh-btn.fnh-gold{background:var(--gold);color:#140D1B;border:1px solid var(--gold-ink)}
-.fnh-btn.fnh-gold:hover{background:var(--gold-deep)}
-.fnh-btn.fnh-gold-o{background:transparent;color:var(--gold-ink);border:1px solid var(--gold-line)}
-.fnh-btn.fnh-gold-o:hover{border-color:var(--gold-ink)}
+.fnh-btn.fnh-outline:hover{border-color:var(--accent);color:var(--accent)}
+.fnh-btn.fnh-ghost{background:transparent;color:var(--accent);padding:10px 14px;border-radius:var(--radius-sm)}
+.fnh-btn.fnh-ghost:hover{color:var(--accent-soft);text-decoration:underline;text-underline-offset:3px}
+.fnh-btn.fnh-highlight,.fnh-btn.fnh-gold{background:var(--highlight);color:#140D1B;border:1px solid var(--highlight-ink)}
+.fnh-btn.fnh-highlight:hover,.fnh-btn.fnh-gold:hover{background:var(--highlight-deep)}
+.fnh-btn.fnh-highlight-o,.fnh-btn.fnh-gold-o{background:transparent;color:var(--highlight-ink);border:1px solid var(--highlight-line)}
+.fnh-btn.fnh-highlight-o:hover,.fnh-btn.fnh-gold-o:hover{border-color:var(--highlight-ink)}
 .fnh-btn:active{transform:translateY(0) scale(.985);transition-duration:var(--motion-fast)}
 .fnh-btn:disabled,.fnh-btn[aria-disabled="true"]{opacity:.42;pointer-events:none;box-shadow:none;transform:none}
 .fnh-ico{width:18px;height:18px;flex:0 0 auto}
@@ -182,7 +192,7 @@ a:focus-visible,button:focus-visible,.fnh-btn:focus-visible,[tabindex]:focus-vis
 .fnh-chip{display:inline-flex;align-items:center;gap:7px;background:var(--card);border:1px solid var(--line);
   color:var(--txt);font-size:13.5px;padding:9px 16px;border-radius:var(--radius-pill)}
 .fnh-badge{display:inline-flex;align-items:center;gap:6px;font-size:10.5px;font-weight:600;
-  color:var(--gold-ink);border:1px solid var(--gold-line);padding:4px 10px;border-radius:20px}
+  color:var(--highlight-ink);border:1px solid var(--highlight-line);padding:4px 10px;border-radius:20px}
 .fnh-status{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:500;
   padding:9px 15px;border-radius:var(--radius-pill);border:1px solid currentColor}
 .fnh-status .fnh-ico{width:16px;height:16px}

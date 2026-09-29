@@ -14,6 +14,18 @@ versionamento segue [SemVer](https://semver.org/lang/pt-BR/):
 
 _Nada pendente no momento._
 
+## [1.1.0] · 2026-09-29
+### Alterado
+- **Nomes de cor organizados em duas camadas.** Cores da marca (`--brand-*`) levam o nome real da cor nesta marca; tokens de uso têm nomes neutros e iguais em todos os DS do grupo (`--primary`, `--accent`, `--highlight`, `--support`, `--glow`), para o código continuar portável entre marcas. Valores não mudaram: comparação de cor computada em todos os elementos do showcase, antes e depois, nos dois temas, deu zero diferença.
+- Tokens de uso: `--roxo-bright` → `--primary-bright`, `--lilas-soft` → `--accent-soft`, `--gold-deep` → `--highlight-deep`, `--gold-line` → `--highlight-line`, `--rose-line` → `--support-line`, `--gold-ink` → `--highlight-ink`, `--rose-ink` → `--support-ink`, `--azul-luz` → `--secondary-bright`, `--roxo2` → `--primary`, `--lilas` → `--accent`, `--peach` → `--glow`, `--roxo` → `--primary-deep`, `--gold` → `--highlight`, `--rose` → `--support`, `--azul` → `--secondary`.
+- Cores da marca: `--brand-amarelo` → `--brand-dourado`, `--brand-vermelho` → `--brand-rosa`, `--brand-amarelado` → `--brand-pessego`, `--brand-roxo` → `--brand-violeta`, `--brand-lilas` → `--brand-lavanda`, `--brand-branco` → `--brand-gelo`.
+- JSON de tokens: chaves renomeadas igual aos tokens (camelCase) e mapa de/para em `$deprecated`.
+- Variantes de botão `fnh-gold` e `fnh-gold-o` viraram `fnh-highlight` e `fnh-highlight-o`; os nomes antigos continuam valendo no CSS de colar no site.
+- Nomes exibidos no showcase ligados à cor real: acentos compartilhados do grupo como **Dourado claro**, **Rosa claro** e **Pêssego** (antes "Amarelo claro", "Vermelho claro" e "Amarelado", com a mesma cor chamada de formas diferentes entre DS); rótulos de gradiente gerados a partir das cores de cada gradiente.
+- Documentação técnica: seção 13 virou "Relação com o molde", só com valores deste DS (a tabela anterior repetia valores de outra marca e desatualizava).
+### Descontinuado
+- Os nomes antigos listados acima continuam funcionando como apelidos no CSS de colar no site e saem na 2.0. Use os nomes novos em código novo.
+
 ## [1.0.3] · 2026-09-29
 ### Corrigido
 - CTA do tema escuro: degradê `#8B33E3 → #2E5FA8` vira `#8C35E3 → #3267B6`; o fim passava 2.7:1 contra o modal e agora fica ≥3:1; texto branco 5.6:1.

@@ -22,7 +22,7 @@ Pacote para aplicar a marca em **qualquer projeto/ferramenta** (web, React, Fram
 
 ## Notas técnicas
 
-- **Cores:** extraídas do **gradiente do logo** (violeta `#7A1AD6`, lavanda `#C286FF`, azul profundo `#204A8A`) mais o apoio herdado da família (amarelo claro `#FFE4A4`, vermelho claro `#FFB1BD`, amarelado `#FFCA9B`) e o gelo `#F3F3F3` e o preto `#101010` do arquivo do logo. Derivadas medidas em WCAG AA nos dois temas.
+- **Cores:** extraídas do **gradiente do logo** (violeta `#7A1AD6`, lavanda `#C286FF`, azul profundo `#204A8A`) mais o apoio herdado da família (dourado claro `#FFE4A4`, rosa claro `#FFB1BD`, pêssego `#FFCA9B`) e o gelo `#F3F3F3` e o preto `#101010` do arquivo do logo. Derivadas medidas em WCAG AA nos dois temas.
 - **Tipografia:** Silka (institucional), embutida em base64/woff2; Poppins como fallback (quando a Silka não estiver disponível), depois system-ui. **Headers em Medium (500)**; eyebrow 600; numeral 700; body 300.
 - **Ícones:** biblioteca **Phosphor**, peso **Thin** (stroke 1pt na grade 24), `currentColor`.
 - **Tema:** dark por padrão; light via `data-theme="light"`; sem atributo segue `prefers-color-scheme`. Toggle persiste em `fnh-theme`.
@@ -34,5 +34,6 @@ Repo público `fotografia-na-hof-design-system` (conta `Eddie-FacialAcademy`), b
 
 ## CHANGELOG
 
+- **1.1.0**: nomes de cor organizados (cores da marca com o nome real, tokens de uso neutros e iguais em todos os DS, nomes antigos como apelidos até a 2.0), seção 13 como "Relação com o molde" e rótulos de gradiente com as cores reais.
 - **1.0.3** (2026-09-29): CTA do tema escuro em `#8C35E3 → #3267B6` (≥3:1 também contra o modal), dia selecionado do calendário em `--cta-solid`/`--cta-ink`, prévia de tema com o CTA real e seletor de design systems com a Facial Premium.
 - **1.0.0** (2026-08-28): primeira versão da marca, derivada do molde Facial Academy com paleta do logo (violeta, lavanda e azul). Histórico completo em `design-system/CHANGELOG.md`.

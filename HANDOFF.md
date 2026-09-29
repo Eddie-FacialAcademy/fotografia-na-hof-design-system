@@ -1,4 +1,4 @@
-# Handoff · Fotografia na HOF Design System (Versão 1.0.3 · estado em 2026-09-29)
+# Handoff · Fotografia na HOF Design System (Versão 1.1.0 · estado em 2026-09-29)
 
 Desenvolvido por **Edegar Junior**. Ponto de retomada; atualizar conforme avançar.
 
@@ -11,7 +11,7 @@ Desenvolvido por **Edegar Junior**. Ponto de retomada; atualizar conforme avanç
 
 ### Marca
 - Derivada do molde **Facial Academy** (mesma arquitetura, seções e JS).
-- Paleta extraída do **gradiente do logo**: violeta `#7A1AD6` (predominante), lavanda `#C286FF` (accent), azul profundo `#204A8A` (segunda cor). Derivadas: violeta profundo `#341060`, violeta brilhante `#8B33E3`, azul médio `#2E5FA8`, azul luz `#7FA9EA`. Apoio herdado da família: amarelo `#FFE4A4`, vermelho claro `#FFB1BD`, amarelado `#FFCA9B`.
+- Paleta extraída do **gradiente do logo**: violeta `#7A1AD6` (predominante), lavanda `#C286FF` (accent), azul profundo `#204A8A` (segunda cor). Derivadas: violeta profundo `#341060`, violeta brilhante `#8B33E3`, azul médio `#2E5FA8`, azul luz `#7FA9EA`. Apoio herdado da família: amarelo `#FFE4A4`, rosa claro `#FFB1BD`, pêssego `#FFCA9B`.
 - **Logo:** wordmark "fotografia na hof"; o "o" de hof é um diafragma com gradiente fixo azul→violeta→lavanda. Composições: horizontal, monocromática (currentColor) e ícone. **Não existe versão vertical nem tipografia sem o diafragma.** Texto segue o tema por `currentColor` com as cores do arquivo: gelo `#F3F3F3` no escuro, preto `#101010` no claro. Não recolorir.
 - **Domínio:** fotografia clínica (registro de antes e depois, luz, enquadramento, padronização, consentimento). Glossário em `design-system/glossario-marca.md`.
 
