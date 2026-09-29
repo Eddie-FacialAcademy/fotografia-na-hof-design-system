@@ -1,5 +1,5 @@
 /* ============================================================================
-   FOTOGRAFIA NA HOF · DESIGN SYSTEM — v1.0.0
+   FOTOGRAFIA NA HOF · DESIGN SYSTEM — v1.0.3
    Desenvolvido por Edegar Junior.
    Identidade própria da marca.
    ----------------------------------------------------------------------------
@@ -74,7 +74,7 @@
 
   --font-sans:'Silka','Poppins',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
   color-scheme:dark;
- --cta-grad:linear-gradient(120deg,#8B33E3,#2E5FA8); --cta-solid:#8B33E3; --cta-solid-h:#2E5FA8; --cta-ink:#fff;}
+ --cta-grad:linear-gradient(120deg,#8C35E3,#3267B6); --cta-solid:#8C35E3; --cta-solid-h:#3267B6; --cta-ink:#fff;}
 
 /* Valores do tema light, reutilizados pelos dois seletores abaixo */
 @media (prefers-color-scheme: light){

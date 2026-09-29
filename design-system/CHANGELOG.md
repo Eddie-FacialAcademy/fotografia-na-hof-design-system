@@ -1,12 +1,12 @@
-# Changelog — Fotografia na HOF Design System
+# Changelog · Fotografia na HOF Design System
 
 Todas as mudanças relevantes deste design system são registradas aqui.
 O formato segue [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/) e o
 versionamento segue [SemVer](https://semver.org/lang/pt-BR/):
 
-- **MAJOR** — muda ou remove um token/API público (quebra compatibilidade).
-- **MINOR** — adiciona de forma retrocompatível (novo componente/token/variante).
-- **PATCH** — correções que não mudam a API (bug, contraste, ajuste fino).
+- **MAJOR**: muda ou remove um token/API público (quebra compatibilidade).
+- **MINOR**: adiciona de forma retrocompatível (novo componente/token/variante).
+- **PATCH**: correções que não mudam a API (bug, contraste, ajuste fino).
 
 ---
 
@@ -14,13 +14,25 @@ versionamento segue [SemVer](https://semver.org/lang/pt-BR/):
 
 _Nada pendente no momento._
 
-## [1.0.2] — 2026-08-28
+## [1.0.3] · 2026-09-29
+### Corrigido
+- CTA do tema escuro: degradê `#8B33E3 → #2E5FA8` vira `#8C35E3 → #3267B6`; o fim passava 2.7:1 contra o modal e agora fica ≥3:1; texto branco 5.6:1.
+- Dia selecionado do calendário usa `--cta-solid` e `--cta-ink` (o roxo base ficava abaixo de 3:1 contra o fundo do calendário no tema escuro).
+- Prévia de tema (cartões escuro e claro) mostra o CTA real de cada tema.
+- `--brand-azul` presente também no showcase e no JSON (antes só no CSS).
+- Tabela de acessibilidade do showcase com valores medidos nos dois temas (antes repetia números do molde que não eram desta paleta) e linha nova "CTA contra o fundo" (nível 2).
+### Alterado
+- Seletor de design systems inclui a Facial Premium, na ordem única usada em todos os DS.
+- Versão alinhada em todos os arquivos: tokens, CSS, copy-deck e documentação estavam presos em uma versão anterior ao CHANGELOG.
+- Documentação sem travessão e sem "&", com valores de cor, contraste e classe conferidos contra o CSS e o JSON; referências a versões e arquivos inexistentes corrigidas.
+
+## [1.0.2] · 2026-08-28
 ### Corrigido
 - Cores de marca branco e preto alinhadas ao arquivo do logo: gelo `#F3F3F3`
   e preto `#101010` no lugar dos absolutos `#FFFFFF`/`#000000` (a marca não
   usa branco nem preto puros).
 
-## [1.0.1] — 2026-08-28
+## [1.0.1] · 2026-08-28
 ### Alterado
 - Menu "Design systems" agora inclui HArmonyCa Performance e Expert em
   Lábios 2026.
@@ -30,7 +42,7 @@ _Nada pendente no momento._
 - Galeria de gradientes retintada por completo na paleta da marca (sobras do
   molde removidas; a aurora agora termina no azul `#2E5FA8`).
 
-## [1.0.0] — 2026-08-28
+## [1.0.0] · 2026-08-28
 
 Primeira versão da Fotografia na HOF, derivada do molde Facial Academy.
 Paleta extraída do gradiente do logo (azul profundo `#204A8A`, violeta

@@ -1,4 +1,4 @@
-# Glossário da marca — Fotografia na HOF
+# Glossário da marca · Fotografia na HOF
 
 Termos do domínio desta marca. Eles aparecem na copy do showcase, nos demos e
 no material do produto. **Não cruzam para outro design system** (regra de

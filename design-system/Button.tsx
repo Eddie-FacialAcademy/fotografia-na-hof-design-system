@@ -43,7 +43,7 @@ export default function Button(props) {
         solid: {
             background:
                 hover && !disabled
-                    ? "var(--cta-solid-h,#2E5FA8)"
+                    ? "var(--cta-solid-h,#3267B6)"
                     : "var(--cta-solid,#7A1AD6)",
             color: "var(--cta-ink,#fff)",
         },

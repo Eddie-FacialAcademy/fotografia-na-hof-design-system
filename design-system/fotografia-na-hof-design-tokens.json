@@ -1,7 +1,7 @@
 {
   "$meta": {
     "name": "Fotografia na HOF Design System",
-    "version": "1.0.0",
+    "version": "1.0.3",
     "author": "Edegar Junior",
     "source": "Identidade visual própria da marca",
     "language": "pt-BR",
@@ -21,6 +21,7 @@
     "brand": {
       "roxo": "#7A1AD6",
       "lilas": "#C286FF",
+      "azul": "#204A8A",
       "amarelo": "#FFE4A4",
       "vermelho": "#FFB1BD",
       "amarelado": "#FFCA9B",
@@ -38,8 +39,8 @@
       "roxoBright": "#8B33E3",
       "lilas": "#C286FF",
       "lilasSoft": "#D4B3FF",
-      "cta": "#8B33E3",
-      "ctaGrad": "linear-gradient(120deg,#8B33E3,#2E5FA8)",
+      "cta": "#8C35E3",
+      "ctaGrad": "linear-gradient(120deg,#8C35E3,#3267B6)", "ctaSolidH": "#3267B6",
       "ctaInk": "#fff",
       "txt": "#F8F8FD",
       "mut": "#C4BFD9",
@@ -79,7 +80,7 @@
       "lilas": "#7A1AD6",
       "lilasSoft": "#6929B8",
       "cta": "#7A1AD6",
-      "ctaGrad": "linear-gradient(120deg,#7A1AD6,#204A8A)",
+      "ctaGrad": "linear-gradient(120deg,#7A1AD6,#204A8A)", "ctaSolidH": "#8B33E3",
       "ctaInk": "#fff",
       "txt": "#1A1533",
       "mut": "#5F5A82",

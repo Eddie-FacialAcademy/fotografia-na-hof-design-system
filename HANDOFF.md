@@ -1,4 +1,4 @@
-# Handoff — Fotografia na HOF Design System (Versão 1.0.0 · estado em 2026-08-28)
+# Handoff · Fotografia na HOF Design System (Versão 1.0.3 · estado em 2026-09-29)
 
 Desenvolvido por **Edegar Junior**. Ponto de retomada; atualizar conforme avançar.
 
@@ -17,7 +17,7 @@ Desenvolvido por **Edegar Junior**. Ponto de retomada; atualizar conforme avanç
 
 ### Acessibilidade (medida, não estimada)
 - 44 pares de contraste da paleta medidos antes do build: todos AA (texto ≥4.5:1, componente ≥3:1).
-- CTA por tema: escuro gradiente `#8B33E3 → #2E5FA8` (branco 5.7:1 e 6.3:1; botão vs fundo 3.4:1 e 3.1:1), claro `#7A1AD6 → #204A8A`.
+- CTA por tema: escuro gradiente `#8C35E3 → #3267B6` (branco 5.6:1 nas duas pontas; botão vs fundo da página 3.5:1 nas duas pontas, vs cartão/modal 3.1:1), claro `#7A1AD6 → #204A8A`.
 - Anel de foco em 2 camadas: `--focus-ring` escuro `#C286FF`, claro `#7A1AD6`; guard forced-colors com `outline !important`.
 
 ### Pacote portátil (`design-system/`)
